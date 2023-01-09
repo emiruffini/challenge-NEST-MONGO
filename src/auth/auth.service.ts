@@ -15,7 +15,7 @@ export class AuthService {
     if (!user) {
       throw new NotFoundException();
     }
-    return user ?? null;
+    return user;
   }
 
   async loginWithCredentials(id: string) {
